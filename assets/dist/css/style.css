@@ -1,0 +1,218 @@
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  top: 20px;
+  transition: all 0.5s;
+}
+
+.nav-acces{
+  margin-top: 10px;
+  z-index: 1;
+  position: absolute;
+}
+
+.nav-acces a {
+  border: 2px solid #46C4EF;
+  border-bottom: none;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 0.2em 0.9em 0.8em;
+  text-shadow: 2px 2px 4px #000000;
+  background-color: rgba(1, 15, 35, 0.5) !important;
+  margin-left: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-acces a img {
+  margin-right: 7px;
+}
+.nav-acces a span {
+  margin-right: 7px;
+
+}
+
+.navbar-perso{
+
+  background-color: rgba(1, 15, 35, 0.8) !important;
+  border: 0 !important;
+  border-radius: 0px !important;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bolder;
+  
+}
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+.lien{
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  text-shadow: none !important;
+    
+}
+nav li a {
+  color: white !important;
+}
+nav li a:hover {
+  color: #46C4EF !important;
+}
+nav li:hover a{
+  background-color: rgba(1, 15, 35, 0.8) !important;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+  background-color: rgba(1, 15, 35, 0.8) !important;
+}
+
+ul.autre{
+  background-color: rgba(1, 15, 35, 1);
+  border: none !important;
+}
+
+ul.autre a:hover{
+  color: blue;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+#myCarousel {
+  height: 250px;
+  margin-bottom: 10px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+#myCarousel .item {
+  height: 250px;
+}
+
+.img-carousel {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(10, 18, 76,0.5);
+  background-blend-mode: color-burn;
+  margin: auto;
+  height: 250px;
+}
+
+.carousel-indicators li{
+  border: 3px solid white;
+  background-color: white; 
+  width: 40px;
+  height: 6px;
+  border-radius: 0px !important;
+}
+
+.carousel-indicators .active {
+  width: 50px;
+  height: 12px;
+  background-color: #46C4EF; 
+  margin: 0em 0.5em 0em;
+}
+
+#myCarousel h2{
+  padding: 50px;
+}
+/* CAROUSEL EFFET*/
+/*
+  Bootstrap Carousel Fade Transition (for Bootstrap 3.3.x)
+  CSS from:       http://codepen.io/transportedman/pen/NPWRGq
+  and:            http://stackoverflow.com/questions/18548731/bootstrap-3-carousel-fading-to-new-slide-instead-of-sliding-to-new-slide
+  Inspired from:  http://codepen.io/Rowno/pen/Afykb 
+*/
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+/*
+  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+  Need to override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    right: 0;
+    left: 0;
+  }
+
+  #myCarousel{
+    display: none;
+  }
+}

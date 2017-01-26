@@ -1,0 +1,189 @@
+body{
+    font: 400 15px Lato, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9F9;
+}
+.text-blanc{
+    color: white;
+    padding: 0.8em 0em 0.8em;
+}
+.text-blancCasse{
+    color: #D3E5FF;
+    padding: 1em 0em 1.5em;
+}
+
+.text-grey{
+    color: #666666;
+}
+.text-black{
+    color: #222222;
+    padding: 0.8em 0em 0.8em;
+}
+.div-right{
+}
+
+.btn-primary{
+    border: 0;
+    margin-bottom: 10px;
+}
+
+.panel-perso{
+    box-shadow: 2px 4px 6px rgba(0,0,0, 0.5);
+  border: none !important;
+}
+.panel-perso>.panel-heading {
+  color: white;
+  background-color: #4481A3;
+  border: #4481A3;
+}
+
+h1{
+    font-weight: bolder;
+    font-size: 46px;
+}
+
+h3{
+    padding: 0;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #555;
+    font-size: 28px;
+}
+
+.lead
+{
+    font-size: 16px;
+}
+
+li{
+    cursor: pointer;
+}
+
+.mastfoot {
+  color: white; /* IE8 proofing */
+  background-color: #555;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.form-horizontal{
+    margin-top: 30px;
+}
+
+.form-horizontal h1{
+    margin-bottom: 20px;
+}
+
+.bs-exemple{
+    width: 95%;
+}
+
+.modal-header{
+    background-color: #4481A3;
+    color: white;
+}
+.news-control{
+    top: 7%;
+    color: #00A8EA;
+    font-size: 60px;
+    width: 100px;
+    height: 0px;
+    z-index: 2;
+}
+.news-control:hover {
+    color: #00A8EA;
+}
+.titre-news{
+    font-weight: bolder;
+}
+.close-news{
+    display: block !important;
+}
+form .form-group p{
+    color: red;
+}
+
+.logo-accueil{
+    background: url('../../img/logo/sofra.png'); 
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 250px;
+}
+
+.logo-accueil-footer{
+    background: url('../../img/logo/sofra.png'); 
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 150px; 
+}
+
+.row-footer{
+  min-height: 130px;
+  max-height: 320px;
+}
+
+.row-footer h4{
+    text-align: left;
+    color: #99d4ff;
+    font-size: 12px;
+}
+
+.row-footer p, .row-footer a{
+    text-align: left;
+    font-size: 9px;
+    color: white;
+}
+
+.prestation-footer{
+    text-align: left;
+}
+
+.icon-bar{
+    background-color: white;
+}
+
+.bandeau-footer{
+    min-height: 10px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #46C4EF;
+}
+
+.social{
+    display: inline-block;
+    opacity: 0.6;
+    transition: all 0.4s;
+    text-align: left;
+}
+
+.social:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.panel-footer{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.panel-body.acces{
+    background-color: grey;
+    color: white;
+}
+#google-map{
+  border: none;
+  width: 100%; 
+  height: 400px;
+}
+
+.btn-block{
+
+}
